@@ -1,0 +1,5 @@
+clean
+throw
+sleep
+learn
+my new todo
