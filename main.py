@@ -1,14 +1,8 @@
-def get_todos(file_path="todos.txt"):
-    with open(file_path, "r") as file_local:
-        todos_local = file_local.readlines()
-        return todos_local
+from functions import get_todos, write_todos
+import time
 
-
-def write_todos(todos_local, file_path="todos.txt"):
-    with open(file_path, "w") as file_local:
-        file_local.writelines(todos_local)
-
-
+now = time.strftime("%b %d, %Y %H:%M:%S")
+print("It is", now)
 while True:
     user_action = input("Type add, show, edit, complete or exit: ")
     user_action = user_action.strip()
